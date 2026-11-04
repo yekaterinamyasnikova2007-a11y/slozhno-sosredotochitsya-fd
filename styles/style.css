@@ -10,7 +10,7 @@
   width: 100%;
   min-width: 96px;
   padding: 10px;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
 }
 
 .header {
@@ -18,7 +18,7 @@
   align-items: center;
   height: 100vh;
   min-height: 668px;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   grid-template-rows: 1.2fr auto 1.5fr;
 }
 
@@ -28,11 +28,11 @@
   justify-self: end;
   align-self: start;
   position: absolute;
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
-  color: #FF0070;
+  color: #ff0070;
   gap: 10px;
   top: 0;
   right: 10px;
@@ -42,10 +42,10 @@
   content: "";
   width: 9px;
   height: 9px;
-  background-color: #FF0070;
+  background-color: #ff0070;
   border-radius: 50%;
   flex-shrink: 0;
-  box-shadow: 0 0 4px 2px #FF0070;
+  box-shadow: 0 0 4px 2px #ff0070;
 }
 
 .decorated-zone {
@@ -89,13 +89,23 @@
 .header__theme-menu-button {
   background-color: transparent;
   color: var(--accent-color);
-  border: none;
-  font-family: 'IBM Plex Mono', sans-serif;
+  border: 1px solid transparent;
+  font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
   text-transform: lowercase;
   padding: 1.5px 13px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border-color: color-mix(in srgb, var(--accent-color) 40%, transparent);
+}
+
+.header__theme-menu-button:focus:not(.header__theme-menu-button_active) {
+  border-bottom-color: var(--accent-color);
 }
 
 .header__theme-menu-button_active {
@@ -103,7 +113,7 @@
 }
 
 .header__title {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 83%;
@@ -117,15 +127,15 @@
 }
 
 .header__description {
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
   background-color: var(--accent-color);
   color: var(--title-text-color);
-  display: block; 
+  display: block;
   align-self: center;
   justify-self: end;
   grid-row: 3;
-  max-width: 100%; 
+  max-width: 100%;
 }
