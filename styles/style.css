@@ -1,5 +1,131 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  display: grid;
+  background-image: var(--page-bg-image);
+  background-color: var(--page-bg-color);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-width: 96px;
+  padding: 10px;
+  grid-template-columns: 1fr; 
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  min-height: 668px;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.2fr auto 1.5fr;
+}
+
+.decorative__bg {
+  display: inline-flex;
+  align-items: center;
+  justify-self: end;
+  align-self: start;
+  position: absolute;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #FF0070;
+  gap: 10px;
+  top: 0;
+  right: 10px;
+}
+
+.decorative__bg::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #FF0070;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 4px 2px #FF0070;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--accent-color);
+}
+
+.decorated-zone::before {
+  border-left: none;
+  border-bottom: none;
+  top: 0;
+  right: 0;
+}
+
+.decorated-zone::after {
+  border-top: none;
+  border-right: none;
+  bottom: 0;
+  left: 0;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: start;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 75px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: none;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  color: var(--accent-title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  justify-self: start;
+}
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+}
+
+.header__description {
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+  display: block; 
+  align-self: center;
+  justify-self: end;
+  grid-row: 3;
+  max-width: 100%; 
 }
