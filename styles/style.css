@@ -27,9 +27,9 @@
   justify-self: end;
   align-self: start;
   position: absolute;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  font-weight: var(--fw-regular);
   line-height: 25px;
   color: #ff0070;
   gap: 10px;
@@ -89,10 +89,10 @@
   background-color: transparent;
   color: var(--accent-color);
   border: 1px solid transparent;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  line-height: var(--text-base);
+  font-weight: var(--fw-regular);
   text-transform: lowercase;
   padding: 1.5px 13px;
   border-bottom: 1px solid transparent;
@@ -112,9 +112,9 @@
 }
 
 .header__title {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: var(--font-mono);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   line-height: 83%;
   color: var(--accent-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -122,10 +122,10 @@
 }
 
 .header__description {
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-base);
   display: block;
   align-self: center;
   justify-self: end;
@@ -140,19 +140,17 @@
 
 .card__section {
   display: grid;
-  grid-column: 1;
   gap: 20px;
-  grid-template-rows: repeat(2, auto);
   justify-self: end;
   max-width: 100%;
 }
 
 .card__section-title {
   color: var(--accent-color);
-  font-family: "IBM Plex Mono", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
+  font-family: var(--font-mono);
+  font-weight: var(--fw-bold);
+  font-size: var(--text-base);
+  line-height: var(--lh-base);
   justify-self: start;
 }
 
@@ -167,24 +165,20 @@
 }
 
 .card__title {
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-base);
   display: block;
   align-self: center;
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
 }
 
 .card__text {
-  font-family: "IBM Plex Mono", sans-serif;
-  font-weight: 400;
+  font-family: var(--font-mono);
+  font-weight: var(--fw-regular);
   color: var(--main-text-color);
-  font-size: 18px;
-  line-height: 23.4px;
+  font-size: var(--text-base);
+  line-height: var(--lh-base);
 }
 
 .concentration {
@@ -192,14 +186,14 @@
 }
 
 .card__title--primary {
-  font-weight: 400;
+  font-weight: var(--fw-regular);
 }
 
 .card__section-lead {
-  font-family: "IBM Plex Mono", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.4px;
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-base);
   display: block;
   justify-self: end;
   max-width: 100%;
@@ -214,9 +208,18 @@
 
 .card__text-link:hover {
   border-bottom: 1px solid var(--main-text-color);
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .card__text-link:focus-visible {
   border: 1px solid var(--main-text-color);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.gallery {
+  gap: 10px;
 }
