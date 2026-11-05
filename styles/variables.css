@@ -5,4 +5,9 @@
   --accent-title-color: #DB00FF;
   --main-text-color: #F1B2CE;
   --title-text-color:   #000028;
+  --font-mono: "IBM Plex Mono", sans-serif;
+  --text-base: 18px;
+  --lh-base: 23.4px;
+  --fw-bold: 700;
+  --fw-regular: 400;
 }
