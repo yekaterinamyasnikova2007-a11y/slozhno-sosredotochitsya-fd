@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="icon" href="favicon.ico" sizes="32×32" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="mobile-icon.png" sizes="180×180" />
+    <link rel="apple-touch-icon" href="mobile-icon.png" sizes="180x180" />
     <meta name="color-scheme" content="dark light" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="decorative__bg" aria-hidden="true">REC</div>
+      <div class="header__rec" aria-hidden="true">REC</div>
 
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -53,9 +53,9 @@
 
       <h1 class="header__title">no focus</h1>
       <p class="header__description title-decor">
-        Что делать, когда не можешь делать ничего Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
-      </p>
+  Что делать, когда не можешь делать ничего<br />
+  Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+</p>
     </header>
 
     <section class="card__section">
@@ -96,7 +96,7 @@
       </div>
     </section>
 
-    <section class="card__section concentration">
+    <section class="card__section cards-section_layout_row">
       <h2 class="card__section-title">Что снижает концентрацию внимания?</h2>
       <div class="cards-section__list">
         <article class="card">
@@ -143,10 +143,12 @@
         Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
         секунд)
       </h2>
-      <p class="title-decor card__section-lead">
-        5 простых (на самом деле не очень) советов
-      </p>
       <div class="cards-section__list">
+        <article class="card">
+          <h3 class="card__title title-decor">
+            5 простых (на самом деле не очень) советов
+          </h3>
+        </article>
         <article class="card">
           <h3 class="card__title title-decor card__title--primary">
             Представьте небо и облака
@@ -216,11 +218,10 @@
         </article>
       </div>
     </section>
-
-    <section class="card__section concentration">
+    <section class="card__section">
       <div class="cards-section__list gallery">
+        <h2 class="card__title title-decor gallery__title">А можно в картинках?</h2>
         <article class="card">
-          <h3 class="card__title title-decor">А можно в картинках?</h3>
           <img src="./images/sunset.png" loading="lazy" alt="Закат" />
         </article>
         <article class="card">
@@ -238,7 +239,7 @@
       </div>
     </section>
     <footer class="footer decorated-zone">
-      <h4 class="footer__title">focus</h1>
+      <h4 class="footer__title">focus</h4>
     </footer>
   </body>
 </html>
