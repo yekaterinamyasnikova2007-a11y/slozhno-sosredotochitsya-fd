@@ -12,6 +12,13 @@
   gap: 50px;
 }
 
+.main {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  row-gap: 40px;
+}
+
 .header {
   display: grid;
   align-items: center;
@@ -243,6 +250,10 @@
     padding: 20px;
   }
 
+  .main {
+    row-gap: 60px;
+  }
+
   .header {
     grid-column: 1 / -1;
     grid-template-columns: 1fr 1fr;
@@ -374,6 +385,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 60px 20px;
     padding: 20px;
+  }
+
+  .main {
+    row-gap: 60px;
   }
 
   .header {
