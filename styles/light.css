@@ -2,6 +2,7 @@
   --page-bg-image: url(../images/cover-image-light.png);
   --page-bg-color: #fff1f7;
   --accent-color: #ff8dcb;
+  --controls-color: #353430;
   --accent-title-color: #ffc2e6;
   --main-text-color: #353430;
   --title-text-color: #353430;
@@ -14,6 +15,7 @@
     --page-bg-image: url(../images/cover-image-light.png);
     --page-bg-color: #fff1f7;
     --accent-color: #ff8dcb;
+    --controls-color: #353430;
     --accent-title-color: #ffc2e6;
     --main-text-color: #353430;
     --title-text-color: #353430;

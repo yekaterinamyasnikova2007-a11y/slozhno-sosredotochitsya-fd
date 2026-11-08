@@ -94,7 +94,7 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  color: var(--accent-color);
+  color: var(--controls-color);
   border: 1px solid transparent;
   font-family: var(--font-mono);
   font-size: var(--text-base);
@@ -107,15 +107,17 @@
 }
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
-  border-color: color-mix(in srgb, var(--accent-color) 40%, transparent);
+  border-color: color-mix(in srgb, var(--controls-color) 40%, transparent);
 }
 
-.header__theme-menu-button:focus:not(.header__theme-menu-button_active) {
-  border-bottom-color: var(--accent-color);
+.header__theme-menu-button:focus-visible:not(
+    .header__theme-menu-button_active
+  ) {
+  border-bottom-color: var(--controls-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--controls-color);
 }
 
 .header__title {
@@ -153,7 +155,7 @@
 }
 
 .card__section-title {
-  color: var(--accent-color);
+  color: var(--controls-color);
   font-family: var(--font-mono);
   font-weight: var(--fw-bold);
   font-size: var(--text-base);
