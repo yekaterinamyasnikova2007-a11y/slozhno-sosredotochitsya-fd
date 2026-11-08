@@ -18,48 +18,46 @@
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
+    <header class="header decorated-zone">
+      <div class="header__rec" aria-hidden="true">REC</div>
+
+      <nav class="header__theme-menu">
+        <ul class="header__theme-menu-list">
+          <li class="header__theme-menu-item">
+            <button
+              type="button"
+              class="header__theme-menu-button header__theme-menu-button_type_light"
+            >
+              День
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              type="button"
+              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+              disabled
+            >
+              Авто
+            </button>
+          </li>
+          <li class="header__theme-menu-item">
+            <button
+              type="button"
+              class="header__theme-menu-button header__theme-menu-button_type_dark"
+            >
+              Неон
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="header__title">no focus</h1>
+      <p class="header__description title-decor">
+        Что делать, когда не можешь делать ничего<br />
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
+    </header>
     <main class="main">
-      <header class="header decorated-zone">
-        <div class="header__rec" aria-hidden="true">REC</div>
-
-        <nav class="header__theme-menu">
-          <ul class="header__theme-menu-list">
-            <li class="header__theme-menu-item">
-              <button
-                type="button"
-                class="header__theme-menu-button header__theme-menu-button_type_light"
-              >
-                День
-              </button>
-            </li>
-            <li class="header__theme-menu-item">
-              <button
-                type="button"
-                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-                disabled
-              >
-                Авто
-              </button>
-            </li>
-            <li class="header__theme-menu-item">
-              <button
-                type="button"
-                class="header__theme-menu-button header__theme-menu-button_type_dark"
-              >
-                Неон
-              </button>
-            </li>
-          </ul>
-        </nav>
-
-        <h1 class="header__title">no focus</h1>
-        <p class="header__description title-decor">
-          Что делать, когда не можешь делать ничего<br />
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
-        </p>
-      </header>
-
       <section class="card__section">
         <h2 class="card__section-title">Почему сосредоточиться так сложно</h2>
         <div class="cards-section__list">
@@ -244,9 +242,9 @@
           </figure>
         </div>
       </section>
-      <footer class="footer decorated-zone">
-        <p class="footer__title">focus</p>
-      </footer>
     </main>
+    <footer class="footer decorated-zone">
+      <p class="footer__title">focus</p>
+    </footer>
   </body>
 </html>

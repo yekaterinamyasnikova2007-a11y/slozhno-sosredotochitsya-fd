@@ -7,9 +7,14 @@
   background-size: cover;
   width: 100%;
   min-width: 96px;
-  padding: 10px;
   grid-template-columns: 1fr;
   gap: 50px;
+}
+
+.header,
+.main,
+.footer {
+  margin-inline: 10px;
 }
 
 .main {
@@ -26,6 +31,7 @@
   min-height: 668px;
   grid-template-columns: 1fr;
   grid-template-rows: 1.2fr auto 1.5fr;
+  margin-top: 10px;
 }
 
 .header__rec {
@@ -217,7 +223,7 @@
 .card img {
   width: 100%;
   display: block;
-  height: 100%; /* ← вот это самое важное */
+  height: 100%;
   min-height: 0;
 }
 
@@ -232,6 +238,7 @@
   justify-items: center;
   height: 100vh;
   min-height: 668px;
+  margin-bottom: 10px;
 }
 
 .footer__title {
@@ -249,7 +256,12 @@
   .page {
     grid-template-columns: minmax(180px, 240px) 1fr;
     gap: 60px 20px;
-    padding: 20px;
+  }
+
+  .header,
+  .main,
+  .footer {
+    margin-inline: 20px;
   }
 
   .main {
@@ -263,6 +275,7 @@
     height: auto;
     min-height: 1024px;
     padding-top: 192px;
+    margin-top: 20px;
   }
 
   .header__title {
@@ -375,6 +388,7 @@
     grid-column: 1 / -1;
     height: auto;
     min-height: 100vh;
+    margin-bottom: 20px;
   }
 
   .footer__title {
@@ -386,7 +400,12 @@
   .page {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px 20px;
-    padding: 20px;
+  }
+
+  .header,
+  .main,
+  .footer {
+    margin-inline: 20px;
   }
 
   .main {
@@ -400,6 +419,7 @@
     height: auto;
     min-height: 768px;
     padding: 0;
+    margin-top: 20px;
   }
 
   .header__theme-menu {
@@ -467,5 +487,9 @@
     grid-column: 1/4;
     max-height: 1091px;
     gap: 20px 20px;
+  }
+
+  .footer {
+    margin-bottom: 20px;
   }
 }
