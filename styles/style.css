@@ -107,6 +107,7 @@
   text-transform: lowercase;
   padding: 1.5px 13px;
   cursor: pointer;
+  transition: border-color 0.2s ease;
 }
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
@@ -117,6 +118,7 @@
     .header__theme-menu-button_active
   ) {
   border-bottom-color: var(--controls-color);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -217,6 +219,7 @@
   text-decoration: none;
   display: inline-block;
   line-height: 0.8;
+  outline: none;
 }
 
 .card__text-link:hover {
@@ -439,10 +442,6 @@
 
   .section-causes .card {
     align-self: start;
-  }
-
-  .section-gallery .section__list {
-    gap: 20px;
   }
 
   .footer {
